@@ -20,10 +20,6 @@ a{
     text-decoration-line: none;
 }
 
-ul{
-    list-style: none;
-}
-
 .logo,
 .logo-foot{
     color: var(--accent-color);
@@ -76,7 +72,6 @@ ul{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -129,7 +124,6 @@ button{
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
 }
 
 .team{
@@ -141,7 +135,7 @@ button{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+
 }
 
 .team-list .text{
@@ -196,4 +190,16 @@ address{
 .card .text{
     font-size: 16px;
     line-height: 1.88;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
