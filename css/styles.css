@@ -102,9 +102,10 @@ ul {
 .contact .link{
     color: var(--main-color);
 }
-
-
-/* Head */
+ .head-list{
+    border-bottom: 1px solid #ECECEC;
+ }
+/* Hero */
 
 .hero{
     padding-top: 200px;
@@ -116,14 +117,13 @@ ul {
 
 .hero-title{
     margin-bottom: 30px;
-
+    
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 button{
@@ -153,6 +153,15 @@ button{
 .feature{
     padding-top: 94px;
     padding-bottom: 94px;
+    /* margin-bottom: 94px; */
+}
+
+.feature-list{
+    display: flex;
+}
+
+.feature-list .item + .item{
+    margin-left: 30px;
 }
 
 .feature-title{
@@ -161,6 +170,7 @@ button{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .feature .text{
@@ -174,6 +184,14 @@ button{
     padding-bottom: 94px;
 }
 
+.work-list{
+    display: flex;
+}
+
+.work-list .item + .item {
+    margin-left: 30px;
+}
+
 .section-title{
     color: var(--title-text-color);
     font-size: 36px;
@@ -183,7 +201,15 @@ button{
 
 .team{
     background-color: #F5F4FA;
-    padding: 94px 215px;
+    padding: 94px;
+}
+
+.team-list{
+    display: flex;
+}
+
+.team-list .item + .item{
+    margin-left: 30px;
 }
 
 .team-list .title{
@@ -227,6 +253,11 @@ address{
 }
 
 /* Portfolio */
+
+.filters{
+    display: flex;
+    
+}
 
 .button-filters{
     background-color: #F5F4FA;
