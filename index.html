@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="head-list">
-        <div class="container main-nav">
+    <header class="head-list">
+      <div class="container main-nav">
+        <nav class="head-nav">
           <a href="index.html" class="logo">
             Web<span class="accent-head">Studio</span>
           </a>
@@ -29,19 +29,18 @@
             </li>
             <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
-
-          <ul class="contact">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        </nav>
+        <ul class="contact">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -130,23 +129,31 @@
           <ul class="team-list">
             <li class="item">
               <img src="./images/p1.jpg" alt="Ігор Дем'яненко" width="270" />
-              <h3 class="title">Ігор Дем'яненко</h3>
-              <p class="text">Product Designer</p>
+              <div class="team-text">
+                <h3 class="title">Ігор Дем'яненко</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/p2.jpg" alt="Ольга Рєпіна" width="270" />
-              <h3 class="title">Ольга Рєпіна</h3>
-              <p class="text">Frontend Developer</p>
+              <div class="team-text">
+                <h3 class="title">Ольга Рєпіна</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/p3.jpg" alt="Микола Тарасов" width="270" />
-              <h3 class="title">Микола Тарасов</h3>
-              <p class="text">Marketing</p>
+              <div class="team-text">
+                <h3 class="title">Микола Тарасов</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/p4.jpg" alt="Михайло Єрмаков" width="270" />
-              <h3 class="title">Михайло Єрмаков</h3>
-              <p class="text">UI Designer</p>
+              <div class="team-text">
+                <h3 class="title">Михайло Єрмаков</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -160,7 +167,7 @@
         </a>
         <address>
           <ul class="contact-foot">
-            <li>
+            <li class="item">
               <a
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target="_blank"
@@ -169,12 +176,12 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>

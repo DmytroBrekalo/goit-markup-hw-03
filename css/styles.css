@@ -34,6 +34,9 @@ p {
     padding: 0;
 }
 
+img{
+    display: block;
+}
 .main-nav{
     display: flex;
     align-items: center;
@@ -42,7 +45,13 @@ p {
 .container {
     width: 1200px;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+ .head-list {
+     border-bottom: 1px solid #ECECEC;
+ }
 
 .logo,
 .logo-foot{
@@ -54,6 +63,10 @@ p {
     text-decoration-line: none;
 }
 
+.head-nav{
+    display: flex;
+    align-items: center;
+}
 .accent-head{
     color: #000000;
 }
@@ -107,9 +120,9 @@ p {
 .contact .link{
     color: var(--main-color);
 }
- .head-list{
-    border-bottom: 1px solid #ECECEC;
- }
+
+
+
 /* Hero */
 
 .hero{
@@ -121,8 +134,8 @@ p {
 }
 
 .hero-title{
-    margin-bottom: 30px;
-    
+    margin: 0 auto;
+    width: 696px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -139,10 +152,12 @@ button{
     border-radius: 4px;
     border-color: transparent;
     padding: 10px 32px;
+    margin-top: 30px;
     background-color: var(--accent-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-size: 16px;
+    font-weight: 700;
     line-height: 1.87;    
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -152,7 +167,16 @@ button{
 /* Features */
 
 .visually-hidden{
-   display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .feature{
@@ -185,7 +209,6 @@ button{
 /* work */
 
 .work{
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -203,6 +226,8 @@ button{
     line-height: 1.17;
     margin-bottom: 50px;
 }
+
+/* Наша команда */
 
 .team{
     background-color: #F5F4FA;
@@ -233,8 +258,13 @@ button{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 30px;
 }
+
+.team-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* foot */
 
 .page-foot {
@@ -251,6 +281,9 @@ address{
     font-style: inherit;
 }
 
+.contact-foot{
+    margin-top: 20px;
+}
 
 .contact-foot .link{
     color: rgba(255, 255, 255, 0.6);
@@ -266,6 +299,9 @@ address{
     margin-bottom: 9px;
 }
 
+.contact-foot .item + .item{
+    margin-top: 9px;
+}
 /* Portfolio */
 
 .filters{
@@ -280,7 +316,7 @@ address{
 }
 
 .button-filters{
-    padding-top: 6px 22px;
+    padding: 6px 22px;
     border-radius: 4px;
     border-color: transparent;
     background-color: #F5F4FA;
@@ -304,14 +340,13 @@ address{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 20px 24px 4px;
     text-align: left;
+    margin-bottom: 4px;
 }
 
 .card .text{
     font-size: 16px;
     line-height: 1.88;
-    margin: 4px 24px 20px;
 }
 
 .portfolio{
@@ -323,6 +358,9 @@ address{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;    
+}
+.card-text{
+    padding: 20px 24px; 
 }
 
 .card .item{
