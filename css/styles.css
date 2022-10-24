@@ -360,14 +360,14 @@ address{
     justify-content: center;    
 }
 .card-text{
-    padding: 20px 24px; 
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .card .item{
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
 }
 
 .card .item:nth-child(3n) {
